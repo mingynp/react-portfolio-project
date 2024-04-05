@@ -1,0 +1,87 @@
+.hero_wrapper {
+    height: 500px;
+    overflow: hidden;
+
+    & .container {
+        max-width :1170px;
+        margin: 0 auto;
+    }
+
+    & .hero_con{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+
+        & .text_1{
+            font-size: 32px;
+        }
+
+        & .text_2{
+            color: blue;
+            font-size: 64px;
+            font-weight: bold;
+        }
+
+        & .text_3{
+            font-size: 32px;
+        }
+
+        & .text_4{
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        & .hero_social{
+            display: flex;
+            list-style: none;
+            margin-top:35px;
+        }
+            & li{
+                margin-right: 30px;
+
+                & svg{
+                    width: 32px;
+                    height: 32px;
+                    color: black;
+                }
+            }
+            
+        & .hero_img{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            margin-left: 120px;
+        }
+
+        & .hero_img{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-image: url('https://www.realmenrealstyle.com/wp-content/uploads/2023/07/Glasses-for-Oval-shape-741x505.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-left: 120px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero_wrapper{
+        height: auto;
+
+        & .hero_con{
+            flex-direction: column;
+            margin: 50px 0;
+            padding: 20px;
+
+            & .hero_info, & .hero_img{
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
